@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "title": "React for Beginners",
+        "description": "Learn the basics of React.js with hands-on projects.",
+        "price": 1999,
+        "image": "https://img.freepik.com/premium-photo/react-js-programming-language-with-laptop-code-script-screen_1020200-5413.jpg?w=1800",
+        "category" : "FrontEnd Development",
+        "youtubeLink": "https://www.youtube.com/watch?v=vz1RlUyrc3w&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige"
+    },
+    {
+        "id": 2,
+        "title": "Advanced JavaScript",
+        "description": "Master JavaScript concepts like closures, promises, and async/await.",
+        "price": 2499,
+        "image": "https://img.freepik.com/premium-vector/modern-flat-design-concept-business-analysis-with-characters-business-meeting-viewing-data_1026586-628.jpg?ga=GA1.1.1507803330.1740564535&semt=ais_hybrid",
+        "category" : "Full Stack Developer",
+        "youtubeLink": "https://youtube.com/playlist?list=PLGjplNEQ1it_oTvuLRNqXfz_v_0pq6unW&si=71b9CcqLoixFG_MR"
+    },
+    {
+        "id": 3,
+        "title": "Node.js & Express",
+        "description": "Build powerful backend applications with Node.js and Express.",
+        "price": 2999,
+        "image": "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?t=st=1740564594~exp=1740568194~hmac=79f6102bd47906a4f73557088ead5389ec3ccc704a69cf2a134363ce5edfd01e&w=1380",
+        "category" : "BackEnd Development",
+        "youtubeLink": "https://youtube.com/playlist?list=PLwGdqUZWnOp3KELplHtc-RnJ5xTUPqdgH&si=KJZsF4_M5yiI_KQs"
+    },
+    {
+        "id": 4,
+        "title": "Full-Stack Development",
+        "description": "Become a full-stack developer with hands-on projects.",
+        "price": 3999,
+        "image": "https://th.bing.com/th/id/OIP.UhnZs_RgbtVTR56Rsrm40gHaEE?w=298&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+        "category" : "Full Stack Developer",
+        "youtubeLink": "https://youtu.be/hpgh2BTtac8?si=aReqVtWE5EukRIRL"
+    },
+    {
+        "id": 5,
+        "title": "Data Analytics",
+        "description": "Become a Data Analytics with hands-on projects.",
+        "price": 3999,
+        "image": "https://img.freepik.com/free-vector/data-analysis-template-design_23-2150713854.jpg?t=st=1740564939~exp=1740568539~hmac=ab49e066625855df8ad7f718417b5938471bcf1dce86552be3feac4af7193d66&w=826",
+        "category" : "Data Analytics",
+        "youtubeLink": "https://youtube.com/playlist?list=PLjVLYmrlmjGdRs1sGqRrTE-EMraLclJga&si=6GSnCnIEOmGhDv-u"
+    },
+    {
+        "id": 6,
+        "title": "Java Full Stack [Spring Boot]",
+        "description": "Become a Data Analytics with hands-on projects.",
+        "price": 3999,
+        "image": "https://th.bing.com/th/id/OIP.MfHftpFQ7PUw9lwQFRLFrAHaEG?w=283&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+        "category" : "Full Stack Developer",
+        "youtubeLink": "https://youtu.be/Ba8t0iBQvRQ?si=BFJC0yaBgAhYjECo"
+    },
+    {
+        "id": 7,
+        "title": "Full-Stack Web Development with React Specialization ",
+        "description": "Become a Data Analytics with hands-on projects.",
+        "price": 3999,
+        "image": "https://ik.imagekit.io/laxaar/1686313855890ReactJS_2400x1200.png",
+        "category" : "Full Stack Developer",
+        "youtubeLink": "https://youtube.com/playlist?list=PLpPqplz6dKxUaZ630TY1BFIo5nP-_x-nL&si=kdcpbaoDsJ4-r3q6"
+    },
+    {
+        "id": 8,
+        "title": "Machine Learning",
+        "description": "Become A AI/ML developer with this course.",
+        "price": 3999,
+        "image": "https://th.bing.com/th/id/OIP.vo3M_xHubdm9j47KWO3D1AHaEK?rs=1&pid=ImgDetMain",
+        "category" : "Data Analytics",
+        "youtubeLink": "https://youtube.com/playlist?list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&si=KyUm9PYIoCHO-KKG"
+    },
+    {
+        "id": 9,
+        "title": "Data Analytics",
+        "description": "Become a Data Analytics with hands-on projects.",
+        "price": 3999,
+        "image": "https://img.freepik.com/free-vector/data-analysis-template-design_23-2150713854.jpg?t=st=1740564939~exp=1740568539~hmac=ab49e066625855df8ad7f718417b5938471bcf1dce86552be3feac4af7193d66&w=826",
+        "category" : "Data Analytics",
+        "youtubeLink": "https://youtube.com/playlist?list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&si=KyUm9PYIoCHO-KKG"
+    },
+    {
+        "id": 10,
+        "title": "3 Best Backend Project Ideas",
+        "description": "Create Three Intresting Project to learn BackEnd Development",
+        "price": 3999,
+        "image": "https://perfectelearning.com/uploads/blogs/1677757815.png?v=1688782147",
+        "category" : "BackEnd Development",
+        "youtubeLink": "https://youtu.be/sz9K1e3LO4M?si=q86tugAzBDIOkmxs"
+    },
+    {
+        "id": 11,
+        "title": "15+ React Project",
+        "description": "Become a React developer by creating 15+ React Project",
+        "price": 3999,
+        "image": "https://th.bing.com/th/id/OIP.c55CkWjekJWvsia9hxnqVQHaFj?w=177&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+        "category" : "FrontEnd Development",
+        "youtubeLink": "https://www.youtube.com/watch?v=vz1RlUyrc3w&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige"
+    },
+    {
+        "id":12,
+        "title": "E-Commerce Full Stack Project",
+        "description": "Become a Full Stack developer by creating Ecom Project",
+        "price": 3999,
+        "image": "https://th.bing.com/th/id/OIP.Xr57Fiy-BoDCHFwhCiFtMQHaEK?w=298&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+        "category" : "Full Stack Developer",
+        "youtubeLink": "https://youtu.be/DXBSM9MYYNA?si=FTaqLZCCzXRD3XiJ"
+    }
+]
