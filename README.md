@@ -10,3 +10,6 @@ Currently, two official plugins are available:
 
 FOR LIVE DEMO
 https://course-selling-pi.vercel.app/
+
+
+IN THIS IF YOU WANT TO TAKE FEEL OF REAL PAYMENT SO CREATE RAZORPAY ID IN TEST MODE AND PUT ID AND USE IT.
