@@ -30,7 +30,7 @@ const Checkout = () => {
       return;
     }
   
-    console.log("Razorpay Key:", import.meta.env.VITE_APP_RAZORPAY_KEY);
+    
   
     if (!window.Razorpay) {
       toast.error("Razorpay SDK failed to load. Please refresh.");
