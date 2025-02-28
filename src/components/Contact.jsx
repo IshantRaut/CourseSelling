@@ -35,10 +35,10 @@ const Contact = () => {
     };
 
     return (
-        <div className="bg-gray-900 text-white py-24 px-6 sm:px-12 lg:px-16">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="bg-gray-900 text-white py-16 px-4 sm:px-8 lg:px-16">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Contact Form */}
-                <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <div className="bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg">
                     <h2 className="text-2xl font-bold text-white text-center mb-6">Contact Us</h2>
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
@@ -86,7 +86,7 @@ const Contact = () => {
                 </div>
 
                 {/* Bootcamp Info */}
-                <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <div className="bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg">
                     <h2 className="text-2xl font-bold text-white flex items-center gap-2">
                         <FaStar className="text-yellow-400" /> Full Stack Web Development Job Bootcamp
                     </h2>
@@ -101,7 +101,7 @@ const Contact = () => {
                         <p className="flex items-center gap-2"><FaCheckCircle className="text-green-400" /> Faculty from MAANG</p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-6 mt-8 text-center">
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-8 text-center">
                         <div>
                             <h3 className="text-3xl font-bold text-white">95%</h3>
                             <p className="text-gray-400 text-sm">Placement Rate</p>

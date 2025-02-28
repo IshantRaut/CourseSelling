@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaCartPlus } from "react-icons/fa";
+import { FaCartPlus, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
   const navigate = useNavigate();
   const [profileImage, setProfileImage] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const fetchProfileImage = () => {
@@ -17,13 +18,8 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
     };
 
     fetchProfileImage();
-
-    // Listen for storage changes when profile updates
     window.addEventListener("storage", fetchProfileImage);
-
-    return () => {
-      window.removeEventListener("storage", fetchProfileImage);
-    };
+    return () => window.removeEventListener("storage", fetchProfileImage);
   }, []);
 
   const handleLogout = () => {
@@ -45,43 +41,51 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
             />
           </button>
 
-          {/* Navigation Links */}
-          <div className="flex space-x-6">
+          {/* Desktop Navigation Links */}
+          <div className="hidden md:flex space-x-6">
             <a
               href="/course"
-              className="px-4 py-2 rounded-md text-lg font-semibold hover:bg-green-500 hover:text-white transition"
+              className="px-4 py-2 rounded-md text-lg font-semibold hover:bg-green-500 transition"
             >
               Courses
             </a>
             {isLoggedIn && (
               <a
                 href="/mycourses"
-                className="px-4 py-2 rounded-md text-lg font-semibold hover:bg-green-500 hover:text-white transition"
+                className="px-4 py-2 rounded-md text-lg font-semibold hover:bg-green-500 transition"
               >
                 My Courses
               </a>
             )}
             <a
               href="/contact"
-              className="px-4 py-2 rounded-md text-lg font-semibold hover:bg-green-500 hover:text-white transition"
+              className="px-4 py-2 rounded-md text-lg font-semibold hover:bg-green-500 transition"
             >
               Contact
             </a>
             <a
               href="/cart"
-              className="px-4 py-2 rounded-md text-lg font-semibold hover:bg-green-500 hover:text-white transition flex items-center"
+              className="px-4 py-2 rounded-md text-lg font-semibold hover:bg-green-500 transition flex items-center"
             >
               <FaCartPlus size={20} />
             </a>
           </div>
 
-          {/* Profile Image & Login/Logout */}
-          <div className="flex items-center space-x-4">
+          {/* Mobile Menu Button */}
+          <button
+            className="ml-9 md:hidden text-white text-2xl"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+
+          {/* Profile & Auth Buttons (Always Visible) */}
+          <div className="flex items-center space-x-4 ml-4">
             {isLoggedIn && (
               <button onClick={() => navigate("/profile")} className="relative">
                 <img
                   className="w-10 h-10 rounded-full border border-white shadow-md"
-                  src={profileImage || "https://via.placeholder.com/40"}
+                  src={profileImage || "https://th.bing.com/th/id/OIP.t7BZK524_FjK_vIz9TaMWwHaJ4?rs=1&pid=ImgDetMain"}
                   alt="Profile"
                 />
               </button>
@@ -90,21 +94,53 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
             {isLoggedIn ? (
               <button
                 onClick={handleLogout}
-                className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white font-semibold rounded-md transition"
+                className="px-1 py-1 bg-gray- hover:bg-gray-600 text-white font-small rounded-md transition"
               >
                 Logout
               </button>
             ) : (
               <button
                 onClick={() => navigate("/login")}
-                className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-md transition"
+                className="px-1 py-1 bg-gray- hover:bg-gray-600 text-white font-small rounded-md transition"
               >
-                Login / Signup
+                Login
               </button>
             )}
           </div>
         </div>
       </div>
+
+      {/* Mobile Navigation Menu */}
+      {menuOpen && (
+        <div className="md:hidden bg-gray-800 py-4 space-y-4 text-center">
+          <a
+            href="/course"
+            className="block px-4 py-2 text-lg font-semibold hover:bg-green-500 transition"
+          >
+            Courses
+          </a>
+          {isLoggedIn && (
+            <a
+              href="/mycourses"
+              className="block px-4 py-2 text-lg font-semibold hover:bg-green-500 transition"
+            >
+              My Courses
+            </a>
+          )}
+          <a
+            href="/contact"
+            className="block px-4 py-2 text-lg font-semibold hover:bg-green-500 transition"
+          >
+            Contact
+          </a>
+          <a
+            href="/cart"
+            className="block px-4 py-2 text-lg font-semibold hover:bg-green-500 transition flex justify-center"
+          >
+            <FaCartPlus size={20} />
+          </a>
+        </div>
+      )}
     </nav>
   );
 };
